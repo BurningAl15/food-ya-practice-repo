@@ -1,12 +1,10 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-
 // class Button extends React.Component {
 //     render() {
-//         console.table(this.props.info);
 //         return (
-//             <a className="sign-up" href={this.props.info.url}>
+//             <a className={this.props.info.buttonStyle} href={this.props.info.url}>
 //                 {this.props.info.content}
 //             </a>
 //         )
@@ -14,6 +12,7 @@ import PropTypes from "prop-types";
 // }
 
 const Button = ({ content, url, buttonStyle }) => {
+
     return (
         <a className={buttonStyle} href={url}>
             {content}
